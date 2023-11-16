@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEN & JERRY'S Ice Cream</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <!-- icon -->
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="https://kit.fontawesome.com/dc3e7a6968.js" crossorigin="anonymous"></script>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <!--nav-->
+    <header>
+        <div class="header">
+            <div class="header-wrap">
+                <img class="logo" src="../images/Ben & Jerry’s.png" alt="밴엔제리스 아이스크림 브랜드 로고입니다.">
+                <img class="menu-icon" src="../images/Menu.png" alt="전체메뉴가 접혀진 아이콘입니다 누르면 전체메뉴가 나옵니다.">
+            </div>
+
+            <div class="header-menu">
+                <!-- close icon -->
+                <ul class="header-menu-list">
+                    <li>ice cream</li>
+                    <li>About</li>
+                    <li>News</li>
+                    <li>Store</li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    <!--main banner-->
+    <main>
+        <div class="main-banner">
+            <video src="../video/벤앤제리스 파인트 아이스크림 _ 마켓컬리.mp4" muted autoplay loop></video>
+        </div>
+
+        <h1 class="main-title">여러분의 행복은<br /> 무엇인가요?</h1>
+
+        <p class="main-desc">
+            "Ben & Jerry's 를 즐길 수 있는 <br />
+            많은 방법들이 있습니다. <br />
+            우리는 모든 분들을 만족시키기 위해<br />엄선된 재료와 품질, 최고의 맛으로 보답합니다."
+        </p>
+        <div class="icecream-button">
+            <button type="button" class="icecream-type-button large pint" id="pint">파인트</button>
+            <button type="button" class="icecream-type-button mini" id="mini">미니컵</button>
+            <button type="button" class="icecream-type-button small" id="scoop">스쿱</button>
+        </div>
+
+        <div class="icecream-type-img">
+            <img src="../images/파인트.png" alt="벤엔제리스 파인트 컵의 아이스크림입니다. 전체에서 제일 큰사이즈입니다.">
+            <img src="../images/미니.png" alt="벤엔제리스 미니 컵의 아이스크림입니다. 전체에서 중간 사이즈입니다.">
+            <img src="../images/스쿱.png" alt="벤엔제리스 파인트 컵의 아이스크림입니다. 전체에서 제일 작은 사이즈입니다.">
+        </div>
+
+        <a href="#" class="icecream-moreInfo">MORE</a>
+
+        <div class="pint-icecream-img container hide">
+            <div class="icecream-images pintImg">
+                <a><img src="../pint-icecream/1.png" alt="체리 가르시아맛"></a>
+                <a><img src="../pint-icecream/2.png" alt="초콜렛 칩 쿠키도우"></a>
+                <a><img src="../pint-icecream/3.png" alt="초콜렛 퍼지 브라우니"></a>
+                <a><img src="../pint-icecream/4.png" alt="청키 몬키"></a>
+                <a><img src="../pint-icecream/5.png" alt="청키 몽키"></a>
+                <a><img src="../pint-icecream/6.png" alt="커피,커피,버즈버즈버즈"></a>
+                <a><img src="../pint-icecream/7.png" alt="하프베이크드"></a>
+                <a><img src="../pint-icecream/8.png" alt="카라멜 수트라맛"></a>
+                <a><img src="../pint-icecream/9.png" alt="민트 초코렛 쿠키"></a>
+                <a><img src="../pint-icecream/10.png" alt="뉴욕 슈퍼 퍼지 청키"></a>
+                <a><img src="../pint-icecream/11.png" alt="피넛버터"></a>
+                <a><img src="../pint-icecream/12.png" alt="바닐라"></a>
+            </div>
+        </div>
+
+        <div class="mini-icecream-img container hide">
+            <div class="icecream-images miniImg">
+                <a><img src="../minicup/1.png" alt="체리 가르시아 미니컵"></a>
+                <a><img src="../minicup/2.png" alt="초콜릿 퍼지 도우 미니컵"></a>
+                <a><img src="../minicup/3.png" alt="초콜렛 퍼지 브라우니 미니컵"></a>
+                <a><img src="../minicup/4.png" alt="돈워리 비해피 미니컵"></a>
+
+            </div>
+
+        </div>
+
+        <div class="scoop-icecream-img container hide">
+            <div class="icecream-images scoopImg">
+                <a><img src="../scoop/1.png" alt="체리가르시아 스쿱"></a>
+                <a><img src="../scoop/2.png" alt="청키 몽키 스쿱"></a>
+                <a><img src="../scoop/3.png" alt="하프 베이크드 스쿱"></a>
+                <a><img src="../scoop/4.png" alt="민트 초코 청크 스쿱"></a>
+                <a><img src="../scoop/5.png" alt="뉴욕 수퍼 처지 청크 스쿱"></a>
+                <a><img src="../scoop/6.png" alt="스트로베리 스쿱"></a>
+                <a><img src="../scoop/7.png" alt="스위트 크림 쿠키 스쿱"></a>
+                <a><img src="../scoop/8.png" alt="바닐라 스쿱"></a>
+            </div>
+        </div>
+
+        <div class="move-button hide">
+            <ion-icon name="arrow-back-outline" id="prev"></ion-icon>
+
+            <ion-icon name="arrow-forward-outline" id="next"></ion-icon>
+        </div>
+
+        <script src="../js/buttonbyimg.js"></script>
+    </main>
+
+    <section class="main-about">
+        <div class="main-about-company">
+        </div>
+        <h1 class="main-about-title">
+            <a href="#">ABOUT</a>
+        </h1>
+        <!-- 아이콘 -->
+        <a href="#" class="about-ben-jerrys"></a>
+    </section>
+
+    <section class="store">
+        <h1 class="store-title">Store</h2>
+            <p>가장 가까운 BEN & JERRY'S 매장 찾기
+            </p>
+
+            <div class="bar">
+                <p class="store-example">강남본점</p>
+                <div class="scroll-bar"></div>
+            </div>
+            <button type="button">현재 위치 재설정</button>
+            <a href="">자세히 보기</a>
+    </section>
+
+    <section class="news">
+        <h1 class="news-title">Ben&jerry's <br />news</h1>
+        <div class="newscontainer">
+            <div class="news-img">
+                <img src="../images/news-1.jpg" alt="">
+                <img src="../images/news-2.jpg" alt="">
+                <img src="../images/news3.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <span><a>문의하기</a></span>
+        <span><a>개인보호정책</a></span>
+        <span><a>개인정보</a></span>
+        <span><a>사이트맵</a></span>
+    </footer>
+
+
+
+    <script src="../js/index.js"></script>
+
+
+
+</body>
+
+</html>

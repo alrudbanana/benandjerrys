@@ -1,0 +1,30 @@
+/* Reset Css */
+a{
+    text-decoration: none;
+    color: inherit; /*상속*/
+}
+
+button, input, textarea{
+    border:none;
+    font-size: 16px;
+    background-color: #fff;
+    font-family: 'DM Sans', sans-serif';
+}
+
+button:focus,
+button:active,
+input:focus,
+input:active,
+textarea:focus,
+textarea:active{
+    box-shadow: none; /* 클릭 시 살짝 파란색인 것 없앰*/
+    outline: none;
+}
+
+ul,
+ol,
+li{
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+}

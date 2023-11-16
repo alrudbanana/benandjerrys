@@ -1,0 +1,365 @@
+/* 웹폰트 - 지마켓 산스 */
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    height: 100%;
+    height: 100%;
+    /* font */
+    font-family: 'GmarketSans';
+    margin: 0;
+    padding: 0;
+}
+
+/*공통 요소*/
+h1 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.05em;
+    text-align: center;
+}
+
+img {
+    display: block;
+}
+
+.hide {
+    display: none !important;
+}
+
+/* header */
+.header{
+    position: relative;
+    z-index: 999;
+}
+
+.header-wrap {
+    display: flex;
+    width: 100vw;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-left: 26px;
+    position: fixed;
+    top: 0;
+}
+
+.logo {
+    display: block;
+    width: 200px;
+    height: 54px;
+    text-align: center;
+    object-fit: contain;
+    
+}
+
+/* ham - menu */
+.menu-icon {
+    width: 100px;
+    height: 48px;
+    padding-left: 70px;
+    position: relative;
+    top:-5px;
+}
+
+.header-menu {
+    display: none;
+    background-color: #fff;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 64px;
+    left: 0;
+    transition: background-color 0.3s ease;
+}
+
+.header-menu-list>li {
+    display: block;
+    padding: 10px 26px;
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.header-menu-list>li:hover {
+    color: #a2d2ff;
+    transition: 0.5s all ease-out;
+}
+
+.menu-show {
+    display: block;
+    text-align: left;
+}
+
+
+/* main */
+.main-banner {
+    padding-left: 0;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.main-banner video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+/* main- about */
+.main-about{
+    z-index: -1;
+}
+.main-about-company{
+    width: 390px;
+    height: 600px;
+    background-image: url(../images/abour-img.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.main-title {
+    margin-top: 102px;
+}
+
+.main-desc {
+    margin-top: 22px;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+}
+/* 메dls 배너 - 아이스크림 */
+.icecream-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+    padding: 0 27px 0 27px;
+}
+
+.icecream-type-button {
+    font-size: 15px;
+    background-color: #cdb4db;
+    border: none;
+    text-align: center;
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 11.83px;
+}
+
+.button-change{
+    background-color: #7743DB;
+    color: #F7EFE5;
+}
+.icecream-type-img {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    transition: all 1s;
+}
+
+.icecream-type-img img {
+    width: 120px;
+    height: 150px;
+}
+
+.icecream-moreInfo{
+    border-radius: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    float: right;
+    padding: 5px 15px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+/* 아이스크림 - 종류별 이미지*/
+.container{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    width: 414px;
+    height: 150px;
+    margin-top: 10px;
+}
+
+.icecream-images{
+    display: flex;
+    flex-shrink: 0;
+    justify-content: space-between;    
+    position: relative;
+    height: 150px;
+    transition: all 0.3s;
+}
+
+.container img{
+    width: 110px;
+    margin-right: 25px;
+}
+
+/* 이동 버튼 */
+.move-button{
+   text-align: center;
+   padding: 20px;
+   position: relative;
+   top: 8px;
+}
+
+#prev{
+    margin-right: 60px;
+}
+
+/* about 밴엔제리스 */
+.main-about{
+    position: relative;
+    padding-top: 120px;
+}
+
+.main-about-title{
+    float: inline-start;
+    position: absolute;
+    top: 40%;
+    left: 20vw;
+    text-transform: uppercase;
+    border-bottom: 1px solid #cdb4db;
+}
+.about-ben-jerrys{
+    position: relative;
+}
+.about-ben-jerrys::after{
+    content: "";
+    background-image: url(../images/right-arrow.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 63px;
+    height: 60px;
+    display: inline-block;
+    position: absolute;
+    top: -100vw;
+    left: 65vw;
+}
+
+/* 스토어찾기 */
+.store{
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    text-transform: uppercase;
+    position: relative;
+    padding-top: 120px;
+}
+
+.store-title{
+    margin-top: 40px;
+}
+
+.store p{
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+}
+
+.store{
+    position: relative;
+    padding: 0 54px;
+}
+
+.bar{
+    position: relative;
+    padding: 10px 10px 6px 13px;
+    box-sizing: border-box;
+}
+
+.bar p{
+    width: 282px;
+    font-size: 16px;
+    text-align: left;
+}
+
+.scroll-bar{
+    /* width: 100%; */
+    height: 2px;
+    background: #000;
+    position: absolute;
+    top: 32px;
+}
+
+.store a{
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 30px;
+    border: 1px solid #000;
+    text-align: center;
+    padding: 5px 0;
+    width: 110px;
+}
+
+
+.store button{
+    font-size: 15px;
+    color: rgb(152, 152, 152);
+    position: relative;
+    left: -10px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.store button::before{
+    content: "";
+    width: 30px;
+    height: 30px; 
+    content: "";
+    display: inline-block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../images/icon_store_current.jpg);
+    position: relative;
+    top:7px;
+    left: 10px;
+    margin-right: 20px;
+
+}
+
+/* 뉴스 */
+.news {
+    padding-top: 120px;
+}
+
+.news-title {
+    text-transform: uppercase;
+}
+
+.newscontainer {
+    width: 390px;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+.news-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+    overflow: hidden;
+}
+
+.news-img img {
+    width: 500px;
+    height: 209px;
+}
+
+footer {
+    padding: 100px 10px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
