@@ -130,7 +130,7 @@ img {
 }
 
 .main-title {
-    padding: 20px;
+    padding-top: 120px;
 }
 
 .main-desc {
@@ -173,12 +173,14 @@ img {
 .icecream-type-img img {
     width: 120px;
     height: 150px;
+    margin-bottom: 10px;
 }
 
 .icecream-moreInfo{
     border-radius: 30px;
     border: 1px solid rgba(0, 0, 0, 0.7);
     float: right;
+    margin: 40px 144px;
     padding: 5px 15px;
 }
 
@@ -291,7 +293,6 @@ img {
 }
 
 .scroll-bar{
-    /* width: 100%; */
     height: 2px;
     background: #000;
     position: absolute;

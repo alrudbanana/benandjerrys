@@ -163,7 +163,7 @@ const slideWidth = 50;
 let offset = slideWidth * currSlide;
 
 pint_items.forEach((i)=>{
-    i.setAttribute("style", `left: ${offset * currSlide}vw`);
+    i.setAttribute("style", `left: ${offset * currSlide}px`);
 })
 
 // nextMove
@@ -172,9 +172,11 @@ function nextMove(iceType,iceMaxLength){
     if(currSlide <= iceMaxLength){
         currSlide++;
         const offset = slideWidth * currSlide;
-        iceType.forEach((i)=>{
-            i.setAttribute("style", `left: ${-offset}vw`)
-        });
+            iceType.forEach((i)=>{
+                i.setAttribute("style", `left: ${-offset}vw`)
+            });
+        
+        
     }else {
         currSlide = 0; 
         let offset = slideWidth * currSlide;
