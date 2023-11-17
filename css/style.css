@@ -12,17 +12,17 @@
 }
 
 body {
-    height: 100%;
-    height: 100%;
+    width: 100vw;
     /* font */
     font-family: 'GmarketSansMedium',cursive;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 /*공통 요소*/
 h1 {
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 700;
     line-height: 1.15;
     letter-spacing: -0.05em;
@@ -119,8 +119,8 @@ img {
 .main-about{
     z-index: -1;
 }
+
 .main-about-company{
-    width: 390px;
     height: 600px;
     background-image: url(../images/abour-img.png);
     background-repeat: no-repeat;
@@ -128,7 +128,7 @@ img {
 }
 
 .main-title {
-    margin-top: 102px;
+    padding: 20px;
 }
 
 .main-desc {
@@ -149,7 +149,7 @@ img {
 
 .icecream-type-button {
     font-size: 15px;
-    background-color: #cdb4db;
+    background-color: #d8e9f5;
     border: none;
     text-align: center;
     color: #fff;
@@ -158,8 +158,8 @@ img {
 }
 
 .button-change{
-    background-color: #7743DB;
-    color: #F7EFE5;
+    background-color: #a6cfe5;
+    color: #424242;
 }
 .icecream-type-img {
     display: flex;
@@ -178,8 +178,6 @@ img {
     border: 1px solid rgba(0, 0, 0, 0.7);
     float: right;
     padding: 5px 15px;
-    margin-top: 20px;
-    margin-right: 20px;
 }
 
 /* 아이스크림 - 종류별 이미지*/
@@ -187,7 +185,7 @@ img {
     display: flex;
     flex-wrap: nowrap;
     overflow: hidden;
-    width: 414px;
+    width: 100%;
     height: 150px;
     margin-top: 10px;
 }
@@ -236,9 +234,11 @@ img {
     text-transform: uppercase;
     border-bottom: 1px solid #cdb4db;
 }
+
 .about-ben-jerrys{
-    position: relative;
+    overflow: hidden;
 }
+
 .about-ben-jerrys::after{
     content: "";
     background-image: url(../images/right-arrow.png);
@@ -246,10 +246,9 @@ img {
     background-repeat: no-repeat;
     width: 63px;
     height: 60px;
-    display: inline-block;
     position: absolute;
-    top: -100vw;
-    left: 65vw;
+    top: 314px;
+    left: 280px;
 }
 
 /* 스토어찾기 */
@@ -268,13 +267,13 @@ img {
 
 .store p{
     font-weight: 700;
-    font-size: 20px;
+    font-size: 14px;
     text-align: center;
 }
 
 .store{
     position: relative;
-    padding: 0 54px;
+    padding: 120px 54px;
 }
 
 .bar{
@@ -298,18 +297,19 @@ img {
 }
 
 .store a{
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 700;
     border-radius: 30px;
     border: 1px solid #000;
     text-align: center;
-    padding: 5px 0;
+    padding: 2px 2px;
     width: 110px;
 }
 
 
 .store button{
-    font-size: 15px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
     color: rgb(152, 152, 152);
     position: relative;
     left: -10px;
@@ -333,39 +333,108 @@ img {
 
 }
 
+
+
 /* 뉴스 */
-.news {
-    padding-top: 120px;
+.news{
+    margin-bottom: 120px;
 }
-.news h1{
-    font-size: 50px;
+.news-container{
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+    padding: 20px 0;
+    width: calc(50% + 130px);
+    margin-left: auto;
 }
+
 .news-title {
     text-transform: uppercase;
+    padding:50px 0px;
+}
+.news-container .content{
+    padding-left: 24px;
 }
 
-.news-container {
-    width: 390px;
-    overflow: hidden;
-    margin-top: 40px;
+.box time,
+.box span{
+    font-weight: 700;
+    font-size: 12px;
 }
 
-.news-img {
+.box span{
+    margin-top: 6px;
+}
+
+.box a{
+    display: block;
+}
+.box li{
+    padding: 0 17px 7px 0;
+    border-bottom: 1px solid #000;
+}
+.box li:nth-child(2){
+    margin-top: 14px;
+}
+.box li:nth-child(3){
+    margin-top: 14px;
+}
+
+
+.box li > time{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    padding: 0 17px 7px 0;
+}
+.box li> span{
+    font-family: 'Noto Sans KR', sans-serif;
+    font: 400;
+    margin-top: 6px;
+}
+.news-container{
+    z-index: 10;
+}
+.news-img {  
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 30px;
-    overflow: hidden;
 }
 
 .news-img img {
-    width: 500px;
+    width: 200px;
     height: 209px;
 }
 
-footer {
-    padding: 100px 10px;
-    font-size: 20px;
+.news-container > .bg{
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #d8e9f5;
+    z-index: -2;
+}
+
+/* footer */
+.footer-list {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
     font-weight: 500;
-    text-align: center;
+    background-color: #f5f9fc;
+    color: #a6cfe5;
+    padding: 30px 0;
+}
+
+.list-content{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.list-content span{
+    margin:0 7px;
+}
+
+.list-content span:nth-child(1){
+    margin-left:13px;
 }

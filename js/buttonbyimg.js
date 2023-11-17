@@ -1,10 +1,7 @@
-// 아이스크림 종류 별 이미지 출력 
-
-//버튼 변수
-const PINT = document.querySelector('.pint');
-const MINI = document.querySelector('.mini');
-const SMALL = document.querySelector('.small');
-const MORE = document.querySelector('.icecream-moreInfo');
+const pintButton = document.querySelector('.pintButton');
+const miniButton = document.querySelector('.miniButton');
+const smallButton = document.querySelector('.smallButton');
+const moreButton = document.querySelector('.icecream-moreInfo');
 
 
 //이미지 변수 
@@ -36,7 +33,7 @@ function imgHide(imgName) {
 function imgShow(imgName) {
     imgName.classList.remove('hide')
     BASIC_IMG.classList.add('hide')
-    MORE.classList.add('hide')
+    moreButton.classList.add('hide')
     moveButton.classList.remove('hide')
 }
 
@@ -44,7 +41,7 @@ function imgShow(imgName) {
 function imgReset(imgName) {
     imgName.classList.add('hide')
     BASIC_IMG.classList.remove('hide')
-    MORE.classList.remove('hide')
+    moreButton.classList.remove('hide')
     moveButton.classList.add('hide')
 }
 
@@ -80,19 +77,19 @@ function buttonColor(button, imgName) {
     currentImg = imgName;
 }
 // 타입을 눌렀을 경우, 타입에 해당하는 버튼 색 변경과 이미지 변경 
-PINT.addEventListener('click', function () {
-    buttonColor(PINT, pintContainer);
+pintButton.addEventListener('click', function () {
+    buttonColor(pintButton, pintContainer);
     count++;
 });
 
-MINI.addEventListener('click', function () {
-    buttonColor(MINI, miniContainer);
+miniButton.addEventListener('click', function () {
+    buttonColor(miniButton, miniContainer);
     count++;
 });
 
 
-SMALL.addEventListener('click', function () {
-    buttonColor(SMALL, smallContainer);
+smallButton.addEventListener('click', function () {
+    buttonColor(smallButton, smallContainer);
     count++;
 });
 
@@ -102,15 +99,6 @@ SMALL.addEventListener('click', function () {
 const moveButton = document.querySelector('.move-button')
 const prevBtn = document.querySelector('#prev')
 const nextBtn = document.querySelector('#next')
-
-//슬라이드 전체 크기 구하기 
-const pintSlide = document.querySelector('.pint-icecream-img')
-const miniSlide = document.querySelector('.mini-icecream-img')
-const smallSlide = document.querySelector('.small-icecream-img')
-
-let pintslidewidth = pintSlide.clientWidth;
-let minislidewidth = pintSlide.clientWidth;
-let smallslidewidth = pintSlide.clientWidth;
 
 // 각 타입별 컨테이너 속 img 들 선택
 let pint_items = document.querySelectorAll('.pintImg')
@@ -175,7 +163,7 @@ const slideWidth = 50;
 let offset = slideWidth * currSlide;
 
 pint_items.forEach((i)=>{
-    i.setAttribute("style", `left: ${offset * currSlide}px`);
+    i.setAttribute("style", `left: ${offset * currSlide}vw`);
 })
 
 // nextMove
@@ -185,7 +173,7 @@ function nextMove(iceType,iceMaxLength){
         currSlide++;
         const offset = slideWidth * currSlide;
         iceType.forEach((i)=>{
-            i.setAttribute("style", `left: ${-offset}px`)
+            i.setAttribute("style", `left: ${-offset}vw`)
         });
     }else {
         currSlide = 0; 
@@ -201,11 +189,11 @@ function nextMove(iceType,iceMaxLength){
 
 nextBtn.addEventListener("click", () => {
     // 이후 버튼 누를 경우 현재 슬라이드를 변경
-    if (currentButton === PINT) {
+    if (currentButton === pintButton) {
         nextMove(pint_items, maxPintLength);
-    } else if (currentButton === MINI) {
+    } else if (currentButton === miniButton) {
         nextMove(mini_items, maxMiniLength);
-    } else if (currentButton === SMALL) {
+    } else if (currentButton === smallButton) {
         nextMove(small_items, maxSmallLength);
     }
   });
