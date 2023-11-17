@@ -7,11 +7,11 @@ menu.addEventListener('click', function () {
     if (showMenu.classList.contains('menu-show')) {
         showMenu.classList.remove('menu-show');
         document.body.style.overflow = 'visible';
-        menu.src="../images/Menu.png"
+        menu.src="./images/Menu.png"
     } else {
         showMenu.classList.add('menu-show');
         document.body.style.overflow = 'hidden';
-       menu.src="../images/close.png";
+       menu.src="./images/close.png";
     }
 
 })
