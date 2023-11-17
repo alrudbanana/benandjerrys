@@ -337,12 +337,14 @@ img {
 .news {
     padding-top: 120px;
 }
-
+.news h1{
+    font-size: 50px;
+}
 .news-title {
     text-transform: uppercase;
 }
 
-.newscontainer {
+.news-container {
     width: 390px;
     overflow: hidden;
     margin-top: 40px;
