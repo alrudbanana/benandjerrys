@@ -35,7 +35,6 @@ var scrollBar = document.querySelector('.scroll-bar');
 var scrollBywitdth = 10;
 
 window.addEventListener('scroll',function(){
-    console.log(window.scrollY)
     if(window.scrollY > 1110){
         if (scrollBywitdth < 100) {
             scrollBywitdth += 10;
@@ -47,7 +46,6 @@ window.addEventListener('scroll',function(){
     else if(window.screenY <=1400){
         if (scrollBywitdth > 0) {
             scrollBywitdth -=50;
-            console.log('이거 적용중?');
             scrollBar.style.width = `${scrollBywitdth}%`;
             scrollBar.style.transition = 'width 1s ease';
         }

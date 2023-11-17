@@ -181,9 +181,6 @@ pint_items.forEach((i)=>{
 // nextMove
 function nextMove(iceType,iceMaxLength){
 
-    console.log('currSlide : '+currSlide)
-    console.log('iceMaxLength : '+iceMaxLength)
-
     if(currSlide <= iceMaxLength){
         currSlide++;
         const offset = slideWidth * currSlide;

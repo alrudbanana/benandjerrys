@@ -1,7 +1,7 @@
 /* 웹폰트 - 지마켓 산스 */
 @font-face {
     font-family: 'GmarketSansMedium';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSans.woff') format('woff');
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -15,7 +15,7 @@ body {
     height: 100%;
     height: 100%;
     /* font */
-    font-family: 'GmarketSans';
+    font-family: 'GmarketSansMedium',cursive;
     margin: 0;
     padding: 0;
 }
@@ -215,7 +215,11 @@ img {
 }
 
 #prev{
+    padding: 20px;
     margin-right: 60px;
+}
+#next{
+  padding: 25px;
 }
 
 /* about 밴엔제리스 */
